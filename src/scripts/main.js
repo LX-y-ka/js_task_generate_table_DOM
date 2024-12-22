@@ -370,7 +370,7 @@ for (const i of people) {
 
   tdName.innerText = i.name;
   row.appendChild(tdName);
-  tdGender.innerHTML = i.sex;
+  tdGender.innerText = i.sex;
   row.appendChild(tdGender);
   tdBorn.innerText = i.born;
   row.appendChild(tdBorn);
@@ -378,7 +378,7 @@ for (const i of people) {
   row.appendChild(tdDied);
   tdAge.innerText = i.died - i.born;
   row.appendChild(tdAge);
-  tdCentury.innerHTML = Math.ceil(i.died / 100);
+  tdCentury.innerText = Math.ceil(i.died / 100);
   row.appendChild(tdCentury);
 
   table.appendChild(row);
